@@ -1,0 +1,12 @@
+C:\Users\aula\pietro\Aula3\App.Infrastructure\bin\Debug\net5.0\App.Infrastructure.deps.json
+C:\Users\aula\pietro\Aula3\App.Infrastructure\bin\Debug\net5.0\App.Infrastructure.dll
+C:\Users\aula\pietro\Aula3\App.Infrastructure\bin\Debug\net5.0\ref\App.Infrastructure.dll
+C:\Users\aula\pietro\Aula3\App.Infrastructure\bin\Debug\net5.0\App.Infrastructure.pdb
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.csprojAssemblyReference.cache
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.AssemblyInfo.cs
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.dll
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\ref\App.Infrastructure.dll
+C:\Users\aula\pietro\Aula3\App.Infrastructure\obj\Debug\net5.0\App.Infrastructure.pdb

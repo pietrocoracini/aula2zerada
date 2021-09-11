@@ -19,6 +19,26 @@ namespace App.Persistence.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+            modelBuilder.Entity("App.Domain.Entities.Cidade", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Cep")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Nome")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Uf")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cidade");
+                });
+
             modelBuilder.Entity("App.Domain.Entities.Pessoa", b =>
                 {
                     b.Property<Guid>("Id")
@@ -27,6 +47,9 @@ namespace App.Persistence.Migrations
 
                     b.Property<bool>("Ativo")
                         .HasColumnType("boolean");
+
+                    b.Property<Guid?>("CidadeId")
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("DataNascimento")
                         .HasColumnType("timestamp without time zone");
@@ -39,7 +62,18 @@ namespace App.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("pessoa");
+                    b.HasIndex("CidadeId");
+
+                    b.ToTable("Pessoa");
+                });
+
+            modelBuilder.Entity("App.Domain.Entities.Pessoa", b =>
+                {
+                    b.HasOne("App.Domain.Entities.Cidade", "Cidade")
+                        .WithMany()
+                        .HasForeignKey("CidadeId");
+
+                    b.Navigation("Cidade");
                 });
 #pragma warning restore 612, 618
         }
